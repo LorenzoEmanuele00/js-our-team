@@ -43,7 +43,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     text += `
         <div class = "col">
             <div class = "card rounded-4">
-                <img class = "rounded-top-4" src = "../img/${teamMembers[i].photo}">
+                <img class = "rounded-top-4" src = "img/${teamMembers[i].photo}">
                 <div class = "py-3">
                     <h3>${teamMembers[i].name}</h3>
                     <h5>${teamMembers[i].role}</h5> 
