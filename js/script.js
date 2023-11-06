@@ -29,10 +29,28 @@ const teamMembers = [
         role: `Graphic Designer`,
         photo: `barbara-ramos-graphic-designer.jpg`,
     },
-]
+];
 
 for (let i = 0; i < teamMembers.length; i++) {
     console.log(teamMembers[i].name);
     console.log(teamMembers[i].role);
     console.log(teamMembers[i].photo);
-  }
+}
+
+let text = ``;
+
+for (let i = 0; i < teamMembers.length; i++) {
+    text += `
+        <div class = "col">
+            <div class = "card rounded-4">
+                <div>
+                    <p>${teamMembers[i].photo}<p>
+                    <h3>${teamMembers[i].name}</h3>
+                    <h5>${teamMembers[i].role}</h5> 
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+document.querySelector(".row").innerHTML = text;
